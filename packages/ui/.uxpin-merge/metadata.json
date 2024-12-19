@@ -565,7 +565,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "f3f51e5b5f81c6ecadee43a72df73f349104de6c",
+    "commitHash": "691c7745ff09a9dbdbbfd77c5e6ce905e3d5a481",
     "paths": {
       "configPath": "/Users/jackbehar/Downloads/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Downloads/plane-preview/packages/ui"
