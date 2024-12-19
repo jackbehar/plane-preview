@@ -1,0 +1,2 @@
+export declare const useAutoResizeTextArea: (textAreaRef: React.RefObject<HTMLTextAreaElement>, value: string | number | readonly string[]) => void;
+//# sourceMappingURL=use-auto-resize-textarea.d.ts.map

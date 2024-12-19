@@ -1,0 +1,574 @@
+{
+  "categorizedComponents": [
+    {
+      "components": [
+        {
+          "info": {
+            "dirPath": "src/avatar",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/avatar/avatar.tsx",
+              "lang": "typescript"
+            },
+            "presets": []
+          },
+          "defaultExported": false,
+          "name": "Avatar",
+          "properties": [
+            {
+              "description": "The name of the avatar which will be displayed on the tooltip",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The background color if the avatar image fails to load",
+              "isRequired": false,
+              "name": "fallbackBackgroundColor",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The text to display if the avatar image fails to load",
+              "isRequired": false,
+              "name": "fallbackText",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The text color if the avatar image fails to load",
+              "isRequired": false,
+              "name": "fallbackTextColor",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether to show the tooltip or not",
+              "isRequired": false,
+              "name": "showTooltip",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              },
+              "defaultValue": {
+                "value": true
+              }
+            },
+            {
+              "description": "The size of the avatars\nPossible values: \"sm\", \"md\", \"base\", \"lg\"",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "number",
+                      "structure": {}
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "base"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    }
+                  ]
+                }
+              },
+              "defaultValue": {
+                "value": "md"
+              }
+            },
+            {
+              "description": "The shape of the avatar\nPossible values: \"circle\", \"square\"",
+              "isRequired": false,
+              "name": "shape",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "circle"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "square"
+                      }
+                    }
+                  ]
+                }
+              },
+              "defaultValue": {
+                "value": "circle"
+              }
+            },
+            {
+              "description": "The source of the avatar image",
+              "isRequired": false,
+              "name": "src",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The custom CSS class name to apply to the component",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": []
+        },
+        {
+          "info": {
+            "dirPath": "src/badge",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/badge/badge.tsx",
+              "lang": "typescript"
+            },
+            "presets": []
+          },
+          "defaultExported": false,
+          "name": "Badge",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "destructive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-destructive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-destructive"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xl"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "appendIcon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "prependIcon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": []
+        },
+        {
+          "info": {
+            "dirPath": "src/button",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/button/button.tsx",
+              "lang": "typescript"
+            },
+            "presets": []
+          },
+          "defaultExported": false,
+          "name": "Button",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "neutral-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "link-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "danger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-danger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-danger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "link-danger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tertiary-danger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "link-neutral"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xl"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "appendIcon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "prependIcon",
+              "type": {
+                "name": "any",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": []
+        }
+      ],
+      "name": "General"
+    }
+  ],
+  "name": "Example Design System",
+  "vcs": {
+    "branchName": "master",
+    "commitHash": "f3f51e5b5f81c6ecadee43a72df73f349104de6c",
+    "paths": {
+      "configPath": "/Users/jackbehar/Downloads/plane-preview/packages/ui/uxpin.config.js",
+      "projectRoot": "/Users/jackbehar/Downloads/plane-preview/packages/ui"
+    }
+  }
+}

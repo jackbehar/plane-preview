@@ -2,14 +2,12 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
-        include: [
-          'src/components/Button/Button.js',
-        ],
+        name: "General",
+        include: ["src/avatar/avatar.tsx", "src/badge/badge.tsx", "src/button/button.tsx"],
       },
     ],
-    wrapper: 'src/components/UXPinWrapper/UXPinWrapper.js',
-    webpackConfig: 'uxpin.webpack.config.js',
+    wrapper: "src/components/UXPinWrapper/UXPinWrapper.js",
+    webpackConfig: "uxpin.webpack.config.js",
   },
-  name: 'Example Design System'
+  name: "Example Design System",
 };
