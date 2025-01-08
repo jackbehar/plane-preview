@@ -6,7 +6,7 @@ module.exports = {
         include: ["src/avatar/avatar.tsx", "src/badge/badge.tsx", "src/button/button.tsx"],
       },
     ],
-    wrapper: "src/components/UXPinWrapper/UXPinWrapper.js",
+    wrapper: "src/components/UXPinWrapper/UXPinWrapper.tsx",
     webpackConfig: "uxpin.webpack.config.js",
   },
   name: "Example Design System",
