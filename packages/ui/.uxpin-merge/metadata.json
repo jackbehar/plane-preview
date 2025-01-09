@@ -1327,7 +1327,7 @@
   "settings": "{\"useUXPinProps\":true}",
   "vcs": {
     "branchName": "master",
-    "commitHash": "9a96559318e74c1b62565cbaf28322e9f44d3b07",
+    "commitHash": "6f3079d96294afa39457f9fd5f3fc31483c839c9",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"

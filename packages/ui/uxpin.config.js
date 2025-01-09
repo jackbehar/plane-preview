@@ -16,7 +16,7 @@ module.exports = {
         ],
       },
     ],
-    wrapper: "src/UXPinWrapper/UXPinWrapper.tsx",
+    wrapper: "src/UXPin/UXPinWrapper/UXPinWrapper.tsx",
     webpackConfig: "uxpin.webpack.config.js",
   },
   name: "Plane.so Components",

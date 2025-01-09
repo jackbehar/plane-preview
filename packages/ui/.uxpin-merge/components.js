@@ -9,7 +9,7 @@ import Card from '../src/UXPin/Card/Card';
 import Input from '../src/UXPin/Input/Input';
 import ToggleSwitch from '../src/UXPin/ToggleSwitch/ToggleSwitch';
 import SubHeading from '../src/UXPin/SubHeading/SubHeading';
-import Wrapper from '../src/UXPinWrapper/UXPinWrapper.tsx';
+import Wrapper from '../src/UXPin/UXPinWrapper/UXPinWrapper.tsx';
 export {
   Avatar,
   AvatarGroup,
