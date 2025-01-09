@@ -1110,15 +1110,82 @@
               "rootId": "ToggleSwitch-1"
             }
           ]
+        },
+        {
+          "info": {
+            "dirPath": "src/UXPin/SubHeading",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/SubHeading/SubHeading.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/SubHeading/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "SubHeading",
+          "componentDescription": "SubHeading description here.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "noMargin",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "sub-heading-1": {
+                  "name": "SubHeading",
+                  "props": {
+                    "children": "I am a SubHeading"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "sub-heading-1"
+            }
+          ]
         }
       ],
       "name": "General"
     }
   ],
-  "name": "Example Design System",
+  "name": "Plane.so Components",
+  "settings": "{\"useUXPinProps\":true}",
   "vcs": {
     "branchName": "master",
-    "commitHash": "fd2f6a009af857f1babde6e5f076bc53ccc3f1f4",
+    "commitHash": "5210762973477ead51b34cce9edb5cebf77dc6e3",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"

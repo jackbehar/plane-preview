@@ -7,6 +7,7 @@ import Button from '../src/UXPin/Button/Button';
 import Breadcrumbs from '../src/UXPin/Breadcrumbs/Breadcrumbs';
 import Card from '../src/UXPin/Card/Card';
 import ToggleSwitch from '../src/UXPin/ToggleSwitch/ToggleSwitch';
+import SubHeading from '../src/UXPin/SubHeading/SubHeading';
 import Wrapper from '../src/UXPinWrapper/UXPinWrapper.tsx';
 export {
   Avatar,
@@ -16,6 +17,7 @@ export {
   Breadcrumbs,
   Card,
   ToggleSwitch,
+  SubHeading,
   Wrapper,
   React,
   ReactDOM,
