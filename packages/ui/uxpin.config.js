@@ -10,6 +10,7 @@ module.exports = {
           "src/UXPin/Button/Button.jsx",
           "src/UXPin/Breadcrumbs/Breadcrumbs.jsx",
           "src/UXPin/Card/Card.jsx",
+          "src/UXPin/Input/Input.jsx",
           "src/UXPin/ToggleSwitch/ToggleSwitch.jsx",
           "src/UXPin/SubHeading/SubHeading.jsx",
         ],
