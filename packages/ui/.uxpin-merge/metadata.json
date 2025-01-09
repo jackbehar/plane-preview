@@ -170,6 +170,154 @@
         },
         {
           "info": {
+            "dirPath": "src/UXPin/AvatarGroup",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/AvatarGroup/AvatarGroup.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/AvatarGroup/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "AvatarGroup",
+          "componentDescription": "AvatarGroups allow users to take actions, and make choices, with a single tap.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "The children of the avatar group.\nThese should ideally should be `Avatar` components",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The maximum number of avatars to display.\nIf the number of children exceeds this value, the additional avatars will be replaced by a count of the remaining avatars.\n@default 2",
+              "isRequired": false,
+              "name": "max",
+              "type": {
+                "name": "number",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Whether to show the tooltip or not\n@default true",
+              "isRequired": false,
+              "name": "showTooltip",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The size of the avatars\nPossible values: \"sm\", \"md\", \"base\", \"lg\"\n@default \"md\"",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "base"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    },
+                    {
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "avatar-group-1": {
+                  "name": "AvatarGroup",
+                  "props": {
+                    "showTooltip": true,
+                    "size": "base",
+                    "max": 2,
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "avatar-group-avatar-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "avatar-group-avatar-2"
+                      },
+                      {
+                        "uxpinPresetElementId": "avatar-group-avatar-3"
+                      },
+                      {
+                        "uxpinPresetElementId": "avatar-group-avatar-4"
+                      }
+                    ]
+                  }
+                },
+                "avatar-group-avatar-1": {
+                  "name": "Avatar",
+                  "props": {
+                    "fallbackText": "JB"
+                  }
+                },
+                "avatar-group-avatar-2": {
+                  "name": "Avatar",
+                  "props": {
+                    "fallbackText": "AH",
+                    "src": "https://i.pravatar.cc"
+                  }
+                },
+                "avatar-group-avatar-3": {
+                  "name": "Avatar",
+                  "props": {
+                    "fallbackText": "MG",
+                    "src": "https://i.pravatar.cc/?"
+                  }
+                },
+                "avatar-group-avatar-4": {
+                  "name": "Avatar",
+                  "props": {
+                    "fallbackText": "TJ",
+                    "src": "https://i.pravatar.cc/?"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "avatar-group-1"
+            }
+          ]
+        },
+        {
+          "info": {
             "dirPath": "src/UXPin/Badge",
             "implementation": {
               "framework": "reactjs",
@@ -841,6 +989,127 @@
               "rootId": "Card-1"
             }
           ]
+        },
+        {
+          "info": {
+            "dirPath": "src/UXPin/ToggleSwitch",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/ToggleSwitch/ToggleSwitch.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/ToggleSwitch/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "ToggleSwitch",
+          "componentDescription": "ToggleSwitchs allow users to take actions, and make choices, with a single tap.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "value",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              },
+              "isAutoUpdated": true
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              },
+              "autoUpdate": {
+                "targetPropName": "value",
+                "valuePath": "0"
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "label",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The size of the ToggleSwitch.\nDetermines the ToggleSwitch's padding and font size.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "ToggleSwitch-1": {
+                  "name": "ToggleSwitch",
+                  "props": {
+                    "variant": "primary",
+                    "size": "md",
+                    "children": "Click me!"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "ToggleSwitch-1"
+            }
+          ]
         }
       ],
       "name": "General"
@@ -849,7 +1118,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "ab9d88525624c2da92bd02f0bf033265a701e2c4",
+    "commitHash": "fd2f6a009af857f1babde6e5f076bc53ccc3f1f4",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"
