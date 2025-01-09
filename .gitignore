@@ -1,5 +1,4 @@
 node_modules
-.uxpin-merge
 .next
 
 ### NextJS ###
@@ -88,3 +87,4 @@ deploy/selfhost/plane-app/
 output.css
 
 .codegpt
+packages/ui/.uxpin-merge/
