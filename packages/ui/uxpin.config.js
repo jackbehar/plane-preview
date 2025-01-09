@@ -7,7 +7,7 @@ module.exports = {
           "src/UXPin/Avatar/Avatar.jsx",
           "src/UXPin/Badge/Badge.jsx",
           "src/UXPin/Button/Button.jsx",
-          // "src/breadcrumbs/breadcrumbs.tsx",
+          "src/UXPin/Breadcrumbs/Breadcrumbs.jsx",
           "src/UXPin/Card/Card.jsx",
           // "src/typography/sub-heading.tsx",
         ],

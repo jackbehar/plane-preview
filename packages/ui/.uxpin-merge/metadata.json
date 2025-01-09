@@ -612,6 +612,106 @@
         },
         {
           "info": {
+            "dirPath": "src/UXPin/Breadcrumbs",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/Breadcrumbs/Breadcrumbs.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/Breadcrumbs/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Breadcrumbs",
+          "componentDescription": "Breadcrumbs description here.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "The content to be displayed.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "isLoading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "",
+              "isRequired": false,
+              "name": "onBack",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "breadcrumbs-1": {
+                  "name": "Breadcrumbs",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "breadcrumbs-button-1"
+                      },
+                      {
+                        "uxpinPresetElementId": "breadcrumbs-button-2"
+                      },
+                      {
+                        "uxpinPresetElementId": "breadcrumbs-button-3"
+                      }
+                    ]
+                  }
+                },
+                "breadcrumbs-button-1": {
+                  "name": "Button",
+                  "props": {
+                    "variant": "link-primary",
+                    "size": "md",
+                    "children": "Link 1"
+                  }
+                },
+                "breadcrumbs-button-2": {
+                  "name": "Button",
+                  "props": {
+                    "variant": "link-primary",
+                    "size": "md",
+                    "children": "Link 2"
+                  }
+                },
+                "breadcrumbs-button-3": {
+                  "name": "Button",
+                  "props": {
+                    "variant": "link-neutral",
+                    "size": "md",
+                    "children": "Link 3"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "breadcrumbs-1"
+            }
+          ]
+        },
+        {
+          "info": {
             "dirPath": "src/UXPin/Card",
             "implementation": {
               "framework": "reactjs",
@@ -749,7 +849,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "4d139d01e90f02250364d8aff03968780e7e8f86",
+    "commitHash": "ab9d88525624c2da92bd02f0bf033265a701e2c4",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"
