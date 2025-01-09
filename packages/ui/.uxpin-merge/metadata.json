@@ -158,12 +158,246 @@
                 "avatar-1": {
                   "name": "Avatar",
                   "props": {
-                    "fallbackText": "JB"
+                    "fallbackText": "JB",
+                    "size": "base"
                   }
                 }
               },
               "name": "default",
               "rootId": "avatar-1"
+            }
+          ]
+        },
+        {
+          "info": {
+            "dirPath": "src/UXPin/Badge",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/Badge/Badge.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/Badge/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Badge",
+          "componentDescription": "Badge description here.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "The content to be displayed within the badge.",
+              "isRequired": true,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The variant of the badge.\nExamples: \"primary\", \"secondary\", \"success\", etc.",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-primary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-neutral"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-success"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-warning"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "destructive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "accent-destructive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "outline-destructive"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "The size of the badge.\nExamples: \"sm\", \"md\", \"lg\", etc.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "xl"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Additional CSS classes to apply to the badge.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the badge will display a loading state.",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "If true, the badge will be disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon to display at the end of the badge content.",
+              "isRequired": false,
+              "name": "appendIcon",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon to display at the start of the badge content.",
+              "isRequired": false,
+              "name": "prependIcon",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "Badge-1": {
+                  "name": "Badge",
+                  "props": {
+                    "size": "md",
+                    "variant": "primary",
+                    "children": "Badge"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "Badge-1"
             }
           ]
         },
@@ -375,6 +609,138 @@
               "rootId": "Button-1"
             }
           ]
+        },
+        {
+          "info": {
+            "dirPath": "src/UXPin/Card",
+            "implementation": {
+              "framework": "reactjs",
+              "path": "src/UXPin/Card/Card.jsx",
+              "lang": "javascript"
+            },
+            "presets": [
+              {
+                "path": "src/UXPin/Card/presets/0-default.jsx"
+              }
+            ]
+          },
+          "defaultExported": true,
+          "name": "Card",
+          "componentDescription": "Card description here.",
+          "componentDocUrl": "https://www.google.com",
+          "properties": [
+            {
+              "description": "The content to be displayed within the Card.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The variant of the card.\nPossible values: \"without-shadow\", \"with-shadow\".\n@default \"with-shadow\"",
+              "isRequired": false,
+              "name": "variant",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "without-shadow"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "with-shadow"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "The spacing inside the card.\nPossible values: \"sm\", \"lg\".\n@default \"lg\"",
+              "isRequired": false,
+              "name": "spacing",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lg"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "The direction of the card layout.\nPossible values: \"row\", \"column\".\n@default \"column\"",
+              "isRequired": false,
+              "name": "direction",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "row"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "column"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Additional CSS class names to apply to the card.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ],
+          "wrappers": [],
+          "documentation": {
+            "examples": []
+          },
+          "presets": [
+            {
+              "elements": {
+                "Card-1": {
+                  "name": "Card",
+                  "props": {
+                    "variant": "with-shadow",
+                    "spacing": "lg",
+                    "direction": "column",
+                    "children": "Card content"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "Card-1"
+            }
+          ]
         }
       ],
       "name": "General"
@@ -383,7 +749,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "94add94f388bcb942ff3ff8bb8d64e8ace3c3b42",
+    "commitHash": "4d139d01e90f02250364d8aff03968780e7e8f86",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"

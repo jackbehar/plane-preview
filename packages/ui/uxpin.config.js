@@ -5,10 +5,10 @@ module.exports = {
         name: "General",
         include: [
           "src/UXPin/Avatar/Avatar.jsx",
-          // "src/badge/badge.tsx",
+          "src/UXPin/Badge/Badge.jsx",
           "src/UXPin/Button/Button.jsx",
           // "src/breadcrumbs/breadcrumbs.tsx",
-          // "src/card/card.tsx",
+          "src/UXPin/Card/Card.jsx",
           // "src/typography/sub-heading.tsx",
         ],
       },
