@@ -4,12 +4,12 @@ module.exports = {
       {
         name: "General",
         include: [
-          "src/avatar/avatar.tsx",
-          "src/badge/badge.tsx",
-          "src/button/merge/Button.tsx",
-          "src/breadcrumbs/breadcrumbs.tsx",
-          "src/card/card.tsx",
-          "src/typography/sub-heading.tsx",
+          "src/UXPin/Avatar/Avatar.jsx",
+          // "src/badge/badge.tsx",
+          "src/UXPin/Button/Button.jsx",
+          // "src/breadcrumbs/breadcrumbs.tsx",
+          // "src/card/card.tsx",
+          // "src/typography/sub-heading.tsx",
         ],
       },
     ],

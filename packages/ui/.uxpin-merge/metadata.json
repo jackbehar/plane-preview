@@ -4,19 +4,25 @@
       "components": [
         {
           "info": {
-            "dirPath": "src/avatar",
+            "dirPath": "src/UXPin/Avatar",
             "implementation": {
               "framework": "reactjs",
-              "path": "src/avatar/avatar.tsx",
-              "lang": "typescript"
+              "path": "src/UXPin/Avatar/Avatar.jsx",
+              "lang": "javascript"
             },
-            "presets": []
+            "presets": [
+              {
+                "path": "src/UXPin/Avatar/presets/0-default.jsx"
+              }
+            ]
           },
-          "defaultExported": false,
+          "defaultExported": true,
           "name": "Avatar",
+          "componentDescription": "Avatar description here.",
+          "componentDocUrl": "https://www.google.com",
           "properties": [
             {
-              "description": "The name of the avatar which will be displayed on the tooltip",
+              "description": "The name of the avatar, which will be displayed on the tooltip.",
               "isRequired": false,
               "name": "name",
               "type": {
@@ -25,7 +31,7 @@
               }
             },
             {
-              "description": "The background color if the avatar image fails to load",
+              "description": "The background color if the avatar image fails to load.",
               "isRequired": false,
               "name": "fallbackBackgroundColor",
               "type": {
@@ -34,7 +40,7 @@
               }
             },
             {
-              "description": "The text to display if the avatar image fails to load",
+              "description": "The text to display if the avatar image fails to load.",
               "isRequired": false,
               "name": "fallbackText",
               "type": {
@@ -43,7 +49,7 @@
               }
             },
             {
-              "description": "The text color if the avatar image fails to load",
+              "description": "The text color if the avatar image fails to load.",
               "isRequired": false,
               "name": "fallbackTextColor",
               "type": {
@@ -52,29 +58,22 @@
               }
             },
             {
-              "description": "Whether to show the tooltip or not",
+              "description": "Whether to show the tooltip or not.\n@default true",
               "isRequired": false,
               "name": "showTooltip",
               "type": {
                 "name": "boolean",
                 "structure": {}
-              },
-              "defaultValue": {
-                "value": true
               }
             },
             {
-              "description": "The size of the avatars\nPossible values: \"sm\", \"md\", \"base\", \"lg\"",
+              "description": "The size of the avatar.\nPossible values: \"sm\", \"md\", \"base\", \"lg\", or a number (in pixels).\n@default \"md\"",
               "isRequired": false,
               "name": "size",
               "type": {
                 "name": "union",
                 "structure": {
                   "elements": [
-                    {
-                      "name": "number",
-                      "structure": {}
-                    },
                     {
                       "name": "literal",
                       "structure": {
@@ -98,16 +97,16 @@
                       "structure": {
                         "value": "lg"
                       }
+                    },
+                    {
+                      "structure": {}
                     }
                   ]
                 }
-              },
-              "defaultValue": {
-                "value": "md"
               }
             },
             {
-              "description": "The shape of the avatar\nPossible values: \"circle\", \"square\"",
+              "description": "The shape of the avatar.\nPossible values: \"circle\", \"square\".\n@default \"circle\"",
               "isRequired": false,
               "name": "shape",
               "type": {
@@ -128,13 +127,10 @@
                     }
                   ]
                 }
-              },
-              "defaultValue": {
-                "value": "circle"
               }
             },
             {
-              "description": "The source of the avatar image",
+              "description": "The source URL of the avatar image.",
               "isRequired": false,
               "name": "src",
               "type": {
@@ -143,7 +139,7 @@
               }
             },
             {
-              "description": "The custom CSS class name to apply to the component",
+              "description": "The custom CSS class name to apply to the component.",
               "isRequired": false,
               "name": "className",
               "type": {
@@ -156,258 +152,52 @@
           "documentation": {
             "examples": []
           },
-          "presets": []
-        },
-        {
-          "info": {
-            "dirPath": "src/badge",
-            "implementation": {
-              "framework": "reactjs",
-              "path": "src/badge/badge.tsx",
-              "lang": "typescript"
-            },
-            "presets": []
-          },
-          "defaultExported": false,
-          "name": "Badge",
-          "properties": [
+          "presets": [
             {
-              "description": "",
-              "isRequired": false,
-              "name": "variant",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "primary"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "accent-primary"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "outline-primary"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "neutral"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "accent-neutral"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "outline-neutral"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "success"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "accent-success"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "outline-success"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "warning"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "accent-warning"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "outline-warning"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "destructive"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "accent-destructive"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "outline-destructive"
-                      }
-                    }
-                  ]
+              "elements": {
+                "avatar-1": {
+                  "name": "Avatar",
+                  "props": {
+                    "fallbackText": "JB"
+                  }
                 }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "size",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "sm"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "md"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "lg"
-                      }
-                    },
-                    {
-                      "name": "literal",
-                      "structure": {
-                        "value": "xl"
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "className",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "loading",
-              "type": {
-                "name": "boolean",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "disabled",
-              "type": {
-                "name": "boolean",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "appendIcon",
-              "type": {
-                "name": "any",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "prependIcon",
-              "type": {
-                "name": "any",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": true,
-              "name": "children",
-              "type": {
-                "name": "node",
-                "structure": {}
-              }
+              },
+              "name": "default",
+              "rootId": "avatar-1"
             }
-          ],
-          "wrappers": [],
-          "documentation": {
-            "examples": []
-          },
-          "presets": []
+          ]
         },
         {
           "info": {
-            "dirPath": "src/button/merge",
+            "dirPath": "src/UXPin/Button",
             "implementation": {
               "framework": "reactjs",
-              "path": "src/button/merge/Button.tsx",
-              "lang": "typescript"
+              "path": "src/UXPin/Button/Button.jsx",
+              "lang": "javascript"
             },
             "presets": [
               {
-                "path": "src/button/merge/presets/0-default.jsx"
+                "path": "src/UXPin/Button/presets/0-default.jsx"
               }
             ]
           },
           "defaultExported": true,
           "name": "Button",
+          "componentDescription": "Buttons allow users to take actions, and make choices, with a single tap.",
+          "componentDocUrl": "https://www.google.com",
           "properties": [
             {
-              "description": "",
+              "description": "The content of the component.",
               "isRequired": false,
-              "name": "appendIcon",
+              "name": "children",
               "type": {
-                "name": "any",
+                "name": "node",
                 "structure": {}
               }
             },
             {
-              "description": "",
-              "isRequired": false,
-              "name": "prependIcon",
-              "type": {
-                "name": "any",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
+              "description": "The variant of the button, which defines its style.",
+              "isRequired": true,
               "name": "variant",
               "type": {
                 "name": "union",
@@ -484,8 +274,8 @@
               }
             },
             {
-              "description": "",
-              "isRequired": false,
+              "description": "The size of the button.\nDetermines the button's padding and font size.",
+              "isRequired": true,
               "name": "size",
               "type": {
                 "name": "union",
@@ -520,7 +310,7 @@
               }
             },
             {
-              "description": "",
+              "description": "The custom class name for the button component.",
               "isRequired": false,
               "name": "className",
               "type": {
@@ -529,7 +319,7 @@
               }
             },
             {
-              "description": "",
+              "description": "Indicates whether the button is in a loading state.",
               "isRequired": false,
               "name": "loading",
               "type": {
@@ -538,7 +328,7 @@
               }
             },
             {
-              "description": "",
+              "description": "Indicates whether the button is disabled.",
               "isRequired": false,
               "name": "disabled",
               "type": {
@@ -547,9 +337,18 @@
               }
             },
             {
-              "description": "",
-              "isRequired": true,
-              "name": "children",
+              "description": "The icon or content appended to the button.",
+              "isRequired": false,
+              "name": "appendIcon",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "The icon or content prepended to the button.",
+              "isRequired": false,
+              "name": "prependIcon",
               "type": {
                 "name": "node",
                 "structure": {}
@@ -576,236 +375,6 @@
               "rootId": "Button-1"
             }
           ]
-        },
-        {
-          "info": {
-            "dirPath": "src/breadcrumbs",
-            "implementation": {
-              "framework": "reactjs",
-              "path": "src/breadcrumbs/breadcrumbs.tsx",
-              "lang": "typescript"
-            },
-            "presets": []
-          },
-          "defaultExported": false,
-          "name": "Breadcrumbs",
-          "properties": [
-            {
-              "description": "",
-              "isRequired": true,
-              "name": "children",
-              "type": {
-                "name": "node",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "onBack",
-              "type": {
-                "name": "func",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "isLoading",
-              "type": {
-                "name": "boolean",
-                "structure": {}
-              },
-              "defaultValue": {
-                "value": false
-              }
-            }
-          ],
-          "wrappers": [],
-          "documentation": {
-            "examples": []
-          },
-          "presets": []
-        },
-        {
-          "info": {
-            "dirPath": "src/card",
-            "implementation": {
-              "framework": "reactjs",
-              "path": "src/card/card.tsx",
-              "lang": "typescript"
-            },
-            "presets": []
-          },
-          "defaultExported": false,
-          "name": "Card",
-          "properties": [
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "variant",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "WITHOUT_SHADOW",
-                        "value": "without-shadow"
-                      }
-                    },
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "WITH_SHADOW",
-                        "value": "with-shadow"
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "spacing",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "SM",
-                        "value": "sm"
-                      }
-                    },
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "LG",
-                        "value": "lg"
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "direction",
-              "type": {
-                "name": "union",
-                "structure": {
-                  "elements": [
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "ROW",
-                        "value": "row"
-                      }
-                    },
-                    {
-                      "name": "enum",
-                      "structure": {
-                        "label": "COLUMN",
-                        "value": "column"
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "className",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": true,
-              "name": "children",
-              "type": {
-                "name": "node",
-                "structure": {}
-              }
-            }
-          ],
-          "wrappers": [],
-          "documentation": {
-            "examples": []
-          },
-          "presets": []
-        },
-        {
-          "info": {
-            "dirPath": "src/typography",
-            "implementation": {
-              "framework": "reactjs",
-              "path": "src/typography/sub-heading.tsx",
-              "lang": "typescript"
-            },
-            "presets": [
-              {
-                "path": "src/typography/presets/0-default.jsx"
-              }
-            ]
-          },
-          "defaultExported": false,
-          "name": "SubHeading",
-          "properties": [
-            {
-              "description": "",
-              "isRequired": true,
-              "name": "children",
-              "type": {
-                "name": "any",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "className",
-              "type": {
-                "name": "string",
-                "structure": {}
-              }
-            },
-            {
-              "description": "",
-              "isRequired": false,
-              "name": "noMargin",
-              "type": {
-                "name": "boolean",
-                "structure": {}
-              }
-            }
-          ],
-          "wrappers": [],
-          "documentation": {
-            "examples": []
-          },
-          "presets": [
-            {
-              "elements": {
-                "sub-heading": {
-                  "name": "SubHeading",
-                  "props": {
-                    "children": "test"
-                  }
-                }
-              },
-              "name": "default",
-              "rootId": "sub-heading"
-            }
-          ]
         }
       ],
       "name": "General"
@@ -814,7 +383,7 @@
   "name": "Example Design System",
   "vcs": {
     "branchName": "master",
-    "commitHash": "5a0b0b8a56e5089e7754e7b9237f34ef0a871449",
+    "commitHash": "94add94f388bcb942ff3ff8bb8d64e8ace3c3b42",
     "paths": {
       "configPath": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui/uxpin.config.js",
       "projectRoot": "/Users/jackbehar/Documents/Repos/plane-preview/packages/ui"
